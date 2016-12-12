@@ -1,4 +1,5 @@
-FROM alpine:3.2
+FROM container4armhf/armhf-alpine:latest
+MAINTAINER Abrahammouse <abrahammouse@gmail.com>
 RUN apk add --update nginx && rm -rf /var/cache/apk/*
 RUN mkdir -p /tmp/nginx/client-body
 
